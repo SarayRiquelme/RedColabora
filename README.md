@@ -2,11 +2,11 @@
 
 RedColabora es una plataforma digital de tipo marketplace social diseñada para conectar pequeñas y medianas empresas (PYMEs), proveedores y consumidores en Santiago, Chile, con un enfoque en promover la economía colaborativa.
 
-## 🎯 Objetivo del Proyecto
+## Objetivo del Proyecto
 
 Abordar las dificultades que enfrentan las PYMEs locales para ganar visibilidad digital y competir en un mercado dominado por grandes plataformas de e-commerce como Mercado Libre o Amazon. La plataforma busca fortalecer la economía local al facilitar la interacción, confianza y colaboración entre negocios y usuarios en un entorno digital accesible, seguro e inclusivo.
 
-## 🚀 Características Principales
+## Características Principales
 
 - **Registro de Usuarios**: Sistema de autenticación con Supabase Auth
   - Tipos de usuario: PYME o Consumidor
@@ -29,7 +29,7 @@ Abordar las dificultades que enfrentan las PYMEs locales para ganar visibilidad 
 
 - **Página de Cotizaciones**: Información sobre el servicio
 
-## 🛠️ Stack Tecnológico
+## Stack Tecnológico
 
 - **Framework**: Next.js 15 (App Router)
 - **Lenguaje**: TypeScript
@@ -39,14 +39,14 @@ Abordar las dificultades que enfrentan las PYMEs locales para ganar visibilidad 
 - **UI Components**: Radix UI + shadcn/ui
 - **Deployment**: Vercel
 
-## 📋 Requisitos Previos
+## Requisitos Previos
 
 - Node.js 18+ 
 - npm o yarn
 - Cuenta de Supabase (gratuita)
 - Cuenta de Vercel (opcional, para deploy)
 
-## 🔧 Instalación y Configuración
+## Instalación y Configuración
 
 ### 1. Clonar el Repositorio
 
@@ -82,7 +82,7 @@ NEXT_PUBLIC_DEV_SUPABASE_REDIRECT_URL=http://localhost:3000/search
 3. Copia:
    - `Project URL` → `NEXT_PUBLIC_SUPABASE_URL`
    - `anon public` key → `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-   - `service_role` key → `SUPABASE_SERVICE_ROLE_KEY` (⚠️ NUNCA expongas esta key en el cliente)
+   - `service_role` key → `SUPABASE_SERVICE_ROLE_KEY` (NUNCA expongas esta key en el cliente)
 
 ### 4. Configurar Base de Datos en Supabase
 
@@ -154,7 +154,7 @@ npm run dev
 
 Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 \`\`\`
 redcolabora/
@@ -260,14 +260,14 @@ redcolabora/
 - created_at: timestamp
 \`\`\`
 
-## 🔒 Seguridad
+## Seguridad
 
 - **Row Level Security (RLS)**: Todas las tablas tienen políticas RLS habilitadas
 - **Autenticación**: Supabase Auth con confirmación de email
 - **Variables de entorno**: Service role key nunca expuesta al cliente
 - **HTTPS**: Obligatorio en producción (Vercel lo maneja automáticamente)
 
-## ♿ Accesibilidad
+## Accesibilidad
 
 El proyecto cumple con WCAG 2.1 AA:
 - ARIA labels en todos los elementos interactivos
@@ -277,7 +277,7 @@ El proyecto cumple con WCAG 2.1 AA:
 - Focus states visibles
 - Alt text en imágenes
 
-## 🚀 Deploy en Vercel
+## Deploy en Vercel
 
 ### Opción 1: Deploy desde v0
 
@@ -368,15 +368,3 @@ npm run lint
 2. Commit tus cambios: `git commit -m 'Agrega nueva funcionalidad'`
 3. Push a la rama: `git push origin feature/nueva-funcionalidad`
 4. Abre un Pull Request
-
-## 📄 Licencia
-
-Este proyecto es privado y confidencial.
-
-## 👥 Equipo
-
-Desarrollado para el curso de Ingeniería de Software - Universidad de Chile
-
----
-
-**¿Necesitas ayuda?** Revisa la sección de Troubleshooting o contacta al equipo de desarrollo.
